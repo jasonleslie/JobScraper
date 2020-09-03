@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="dumps\**" />
+    <Compile Remove="SampleNoResults_files\**" />
+    <Compile Remove="SamplePage_files\**" />
+    <EmbeddedResource Remove="dumps\**" />
+    <EmbeddedResource Remove="SampleNoResults_files\**" />
+    <EmbeddedResource Remove="SamplePage_files\**" />
+    <None Remove="dumps\**" />
+    <None Remove="SampleNoResults_files\**" />
+    <None Remove="SamplePage_files\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Outcome_Expectations.txt" />
+    <None Remove="Re-Design_Process.txt" />
+    <None Remove="SampleNoResults.html" />
+    <None Remove="SamplePage.html" />
+    <None Remove="SampleTable.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="0.14.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>
