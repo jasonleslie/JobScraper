@@ -338,3 +338,12 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/JobScraper/dumps
+/JobScraper/SampleNoResults_files
+/JobScraper/SamplePage_files
+/JobScraper/SampleTable.html
+/JobScraper/SamplePage.html
+/JobScraper/SampleNoResults.html
+/JobScraper/Re-Design_Process.txt
+/JobScraper/Outcome_Expectations.txt
+/JobScraper/App.config
